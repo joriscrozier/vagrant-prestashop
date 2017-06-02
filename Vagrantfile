@@ -8,8 +8,8 @@ Vagrant.configure("2") do |config|
     # Network-specific configuration
     config.vm.hostname = "prestashop"
 
-    config.vm.network "forwarded_port", guest: 80, host: 8080
-    config.vm.network "forwarded_port", guest: 3306, host: 3306
+    config.vm.network "forwarded_port", guest: 80, host: 8081
+    config.vm.network "forwarded_port", guest: 3306, host: 3307
 
     # Shared directory
     config.vm.synced_folder "./src", "/var/www/modules/examplemodule",
